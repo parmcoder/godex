@@ -19,6 +19,8 @@
     "category": "Productivity",
     "capabilities": ["Code", "Review", "Debug", "Write"],
     "websiteURL": "https://github.com/parmcoder/godex",
+    "privacyPolicyURL": "https://github.com/parmcoder/godex/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/parmcoder/godex/blob/main/TERMS.md",
     "brandColor": "#F59E0B",
     "composerIcon": "./assets/logo.png",
     "logo": "./assets/logo.png",
