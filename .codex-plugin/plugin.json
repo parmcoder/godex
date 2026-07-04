@@ -1,0 +1,30 @@
+{
+  "name": "godex",
+  "version": "0.0.1",
+  "description": "A tiny Godex plugin shell with a suspiciously confident mascot.",
+  "author": {
+    "name": "parmcoder",
+    "url": "https://github.com/parmcoder"
+  },
+  "homepage": "https://github.com/parmcoder/godex",
+  "repository": "https://github.com/parmcoder/godex",
+  "license": "MIT",
+  "keywords": ["codex", "plugin", "godex"],
+  "interface": {
+    "displayName": "Godex",
+    "shortDescription": "A funny little Godex plugin starter.",
+    "longDescription": "Godex is initialized for the Codex plugin marketplace with a lean manifest and a cheerful logo. Real capabilities can be added when the plugin earns them.",
+    "developerName": "parmcoder",
+    "category": "Productivity",
+    "capabilities": ["Write"],
+    "websiteURL": "https://github.com/parmcoder/godex",
+    "brandColor": "#F59E0B",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "defaultPrompt": [
+      "Open Godex and keep it tiny.",
+      "Help me shape this plugin.",
+      "Review Godex for bloat."
+    ]
+  }
+}
