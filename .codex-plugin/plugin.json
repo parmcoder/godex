@@ -1,30 +1,31 @@
 {
   "name": "godex",
   "version": "0.0.1",
-  "description": "A tiny Godex plugin shell with a suspiciously confident mascot.",
+  "description": "Go backend engineering guidance for Codex agents building production services.",
   "author": {
     "name": "parmcoder",
     "url": "https://github.com/parmcoder"
   },
   "homepage": "https://github.com/parmcoder/godex",
   "repository": "https://github.com/parmcoder/godex",
-  "license": "MIT",
-  "keywords": ["codex", "plugin", "godex"],
+  "license": "Apache-2.0",
+  "keywords": ["codex", "plugin", "godex", "go", "backend"],
+  "skills": "./skills/",
   "interface": {
     "displayName": "Godex",
-    "shortDescription": "A funny little Godex plugin starter.",
-    "longDescription": "Godex is initialized for the Codex plugin marketplace with a lean manifest and a cheerful logo. Real capabilities can be added when the plugin earns them.",
+    "shortDescription": "Go backend engineering guidance.",
+    "longDescription": "Godex is an independent Codex plugin for Go backend engineering. It guides agents through idiomatic package structure, net/http or gin services, config loading, testing, pgx, Redis, Kafka, OpenTelemetry, Swagger docs, Wire, mockery, Taskfile workflows, and production readiness.",
     "developerName": "parmcoder",
     "category": "Productivity",
-    "capabilities": ["Write"],
+    "capabilities": ["Code", "Review", "Debug", "Write"],
     "websiteURL": "https://github.com/parmcoder/godex",
     "brandColor": "#F59E0B",
     "composerIcon": "./assets/logo.png",
     "logo": "./assets/logo.png",
     "defaultPrompt": [
-      "Open Godex and keep it tiny.",
-      "Help me shape this plugin.",
-      "Review Godex for bloat."
+      "Use Godex to review this Go service.",
+      "Use Godex to plan a Go backend change.",
+      "Use Godex to improve Go test coverage."
     ]
   }
 }

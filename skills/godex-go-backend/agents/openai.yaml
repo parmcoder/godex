@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godex Go Backend"
+  short_description: "Go backend engineering guidance"
+  default_prompt: "Use $godex-go-backend to review this Go service for production readiness."
