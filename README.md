@@ -10,12 +10,15 @@ It gives backend agents a compact, production-minded skill for building, reviewi
 
 ## Getting Started
 
-Add this repo as a local Codex plugin marketplace, then install Godex:
+Add the GitHub repo as a Codex plugin marketplace, then install Godex:
 
 ```bash
-codex plugin marketplace add .
-codex plugin add godex
+codex plugin marketplace add parmcoder/godex
+codex plugin add godex@godex
+codex plugin list
 ```
+
+Use a new Codex thread after installing so the `godex-go-backend` skill is loaded.
 
 ## Use
 

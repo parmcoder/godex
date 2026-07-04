@@ -1,0 +1,21 @@
+{
+  "name": "godex",
+  "interface": {
+    "displayName": "Godex"
+  },
+  "plugins": [
+    {
+      "name": "godex",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/parmcoder/godex.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
