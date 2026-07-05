@@ -15,7 +15,10 @@
 - Table tests used where they make cases clearer.
 - Suites used only when shared setup or mocks help.
 - Mockery mocks are regenerated through a task.
-- Integration tests document required dependencies.
+- CI unit/service tests run without real PostgreSQL, Redis, Kafka, S3, or external APIs.
+- Local integration tests document required containers and commands, and stay out of default CI unless a dedicated integration job exists.
+- Integration tests use setup/teardown plus small data populators for database rows, cache keys, and messages.
+- Repository transaction/invariant changes include real DB integration coverage or explicitly report the gap.
 
 ## API Readiness
 
@@ -30,6 +33,8 @@
 - SQL is explicit.
 - Transactions have clear boundaries.
 - Migration and rollback risk is reviewed.
+- Repository invariants are covered against real PostgreSQL when SQL behavior matters.
+- Test fixtures are committed to the test database before assertions and cleaned up afterward.
 
 ## Kafka Readiness
 

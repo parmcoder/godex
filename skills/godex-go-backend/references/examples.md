@@ -29,10 +29,26 @@ Expected behavior: keep liveness cheap, readiness dependency-aware, and metrics 
 ## Add pgx Repository
 
 ```text
-Use $godex-go-backend to add a pgx-backed repository with explicit SQL, clear transaction boundaries, and cancellation tests.
+Use $godex-go-backend to add a pgx-backed repository with explicit SQL, clear transaction boundaries, CI-safe service tests, and local-only PostgreSQL integration tests for real transaction behavior.
 ```
 
 Expected behavior: read current database patterns first and avoid a generic repository abstraction.
+
+## Add CI-Safe Service Tests
+
+```text
+Use $godex-go-backend to add CI-friendly service tests using httpmock, pgxmock, redismock, Sarama mocks, or generated mockery mocks at external boundaries.
+```
+
+Expected behavior: cover service contracts, validation, error mapping, retries, cancellation, and orchestration without requiring real infrastructure.
+
+## Add Local Integration Tests
+
+```text
+Use $godex-go-backend to add local-only integration tests for SQL, Redis get/set, Kafka publish/consume, and API calls through declared containers.
+```
+
+Expected behavior: gate tests behind a build tag or task, document the containers and command, add setup/teardown plus data populators, verify committed database/cache/message state, and keep default CI independent of real components.
 
 ## Add Redis Cache
 

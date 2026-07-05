@@ -20,3 +20,7 @@ Review repositories for:
 - row closing and scan error handling
 - idempotent writes where retries can occur
 - tests for no rows, duplicate keys, transaction rollback, and context cancellation
+- PostgreSQL-backed integration tests for transaction and invariant behavior when repository correctness depends on real SQL
+- test data populators for required rows and relations instead of ad hoc setup copied across cases
+- setup/teardown that commits known fixture state to the test database and removes it after each test or suite
+- stock/inventory changes must test rejected product IDs, unauthorized or missing shop, insufficient stock, successful decrement, failed sale rollback with no sale log, and user isolation

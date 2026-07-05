@@ -1,6 +1,6 @@
 ---
 name: godex-go-backend
-description: Use when working on Go backend services: build, review, test, debug, refactor, or production-harden HTTP APIs, pgx repositories, Redis caches, Kafka/Sarama consumers, OpenTelemetry/Jaeger observability, Swagger docs, Google Wire dependency injection, mockery tests, Taskfile workflows, Air/Delve debugging, Kubernetes readiness, or Go package structure.
+description: "Use when working on Go backend services: build, review, test, debug, refactor, or production-harden HTTP APIs, pgx repositories, Redis caches, Kafka/Sarama consumers, OpenTelemetry/Jaeger observability, Swagger docs, Google Wire dependency injection, mockery tests, Taskfile workflows, Air/Delve debugging, Kubernetes readiness, or Go package structure."
 ---
 
 # Godex Go Backend
