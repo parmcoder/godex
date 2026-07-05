@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.2
+
+- Tightened Go backend testing guidance with separate CI-safe unit/service tests and local-only integration tests.
+- Added explicit guidance for `httpmock`, `pgxmock`, `redismock`, Sarama mocks, and generated mockery mocks at external boundaries.
+- Added PostgreSQL, Redis, Kafka, and HTTP/API integration-test expectations, including setup/teardown and test data populators.
+- Added stock/inventory repository coverage expectations for real PostgreSQL transaction and invariant behavior.
+
 ## 0.0.1
 
 - Initialized Godex as an independent Codex plugin.
