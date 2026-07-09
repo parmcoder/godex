@@ -18,7 +18,7 @@
 - CI unit/service tests run without real PostgreSQL, Redis, Kafka, S3, or external APIs.
 - Local integration tests document required containers and commands, and stay out of default CI unless a dedicated integration job exists.
 - Integration tests use setup/teardown plus small data populators for database rows, cache keys, and messages.
-- Repository transaction/invariant changes include real DB integration coverage or explicitly report the gap.
+- Transaction/invariant changes include PostgreSQL integration tests proving commit, rollback, concurrency invariants, and no partial writes.
 
 ## API Readiness
 
@@ -31,7 +31,9 @@
 
 - pgx calls accept context.
 - SQL is explicit.
-- Transactions have clear boundaries.
+- Transaction ownership matches the operation boundary; multi-repository use cases are service-owned.
+- All use-case queries share one `pgx.Tx` and context, with immediate deferred rollback and one explicit commit.
+- Transactions contain no slow network calls or external side effects; compensation, idempotency, or an outbox covers those boundaries.
 - Migration and rollback risk is reviewed.
 - Repository invariants are covered against real PostgreSQL when SQL behavior matters.
 - Test fixtures are committed to the test database before assertions and cleaned up afterward.

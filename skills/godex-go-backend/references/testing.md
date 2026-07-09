@@ -30,9 +30,9 @@ Integration tests:
 
 - Use them for pgx, Redis, and Kafka behavior when correctness depends on the real dependency.
 - Gate them behind clear build tags or task names if they need local containers.
-- Test transaction rollback, cache miss/outage behavior, consumer retry/idempotency, and cancellation.
+- Test transaction commit, rollback, concurrency invariants, no partial writes, cache miss/outage behavior, consumer retry/idempotency, and cancellation.
 - Do not mock the repository under test when verifying PostgreSQL transaction behavior or data invariants.
-- PostgreSQL tests cover real SQL, migrations/schema assumptions, transactions, rollback/no-side-effect behavior, ownership isolation, not-found mapping, and stock/inventory invariants.
+- PostgreSQL tests prove commit, rollback, concurrency invariants, no partial writes, ownership isolation, not-found mapping, and relevant domain invariants against real SQL and schema assumptions.
 - Redis tests cover real get/set, miss behavior, TTL, serialization, and outage behavior where relevant.
 - Kafka tests cover publish/consume, topic assumptions, idempotency, retry, offset/ack behavior, and cancellation.
 - HTTP/API tests cover real route wiring, middleware, auth boundaries, request/response contracts, and generated docs compatibility where applicable.
