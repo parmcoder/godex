@@ -1,6 +1,6 @@
 {
   "name": "godex",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Go backend engineering guidance for Codex agents building production services.",
   "author": {
     "name": "parmcoder",

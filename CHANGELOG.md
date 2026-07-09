@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.3
+
+- Added safe pgx transaction-ownership guidance for repository and service boundaries.
+- Added a transaction decision table, service-owned transaction example, external side-effect patterns, and PostgreSQL integration-test requirements.
+
 ## 0.0.2
 
 - Tightened Go backend testing guidance with separate CI-safe unit/service tests and local-only integration tests.
